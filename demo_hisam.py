@@ -28,7 +28,7 @@ def get_args_parser():
                         help="The type of model to load, in ['vit_h', 'vit_l', 'vit_b']")
     parser.add_argument("--checkpoint", type=str, required=True,
                         help="The path to the SAM checkpoint to use for mask generation.")
-    parser.add_argument("--device", type=str, default="cuda",
+    parser.add_argument("--device", type=str, default="cpu",
                         help="The device to run generation on.")
     parser.add_argument("--hier_det", action='store_true',
                         help="If False, only text stroke segmentation.")
